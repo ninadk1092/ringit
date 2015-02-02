@@ -10,8 +10,8 @@ input = read("01. The Eagles - Hotel California.wav")
 audio = input[1]
 
 #apply Hanning window
-window = hann(1024)
-audio = audio[0:1024]
+#window = hann(1024)
+#audio = audio[0:1024]
 
 #fft
 mags = abs(rfft(audio))
