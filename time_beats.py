@@ -31,12 +31,9 @@ for BW in xrange(0,len(audio), 50):
   #maxS = max(Savg_list)
   BmaxSavg_list.append(Savg_list)
 
-plt.plot(BmaxSavg_list)
-'''
-x = np.linspace(0, len(BmaxSavg_list), len(BmaxSavg_list))   #np.linspace(start,stop,number_of_numbers) 
+x = np.linspace(0, len(BmaxSavg_list), len(BmaxSavg_list) -1)   #np.linspace(start,stop,number_of_numbers) 
 print len(x), len(BmaxSavg_list)
 plt.scatter(x,BmaxSavg_list)
 plt.autoscale(tight=True)
 plt.grid()
 plt.show()
-'''
